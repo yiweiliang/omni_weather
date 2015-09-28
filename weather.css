@@ -1,0 +1,86 @@
+
+	.weather{height:200px; width:200px; margin:30px auto;  font-family: "Myriad Pro", open sans, sans-serif; color:white;font-size:25px;}
+	body{
+  background-color: #3399FF;
+}
+.container-sun{
+  text-align:center;
+}
+/* the svg element */
+.svg-sun{
+  width:200px;
+  height:200px;
+
+  -webkit-transform-origin: center center;
+  -moz-transform-origin: 50% 50%;
+  -o-transform-origin: center center;
+  -ms-transform-origin: center center;
+  transform-origin:50% 50%;
+
+-webkit-animation: spin 25s linear infinite, sun-glow 3s 0s linear infinite;
+-moz-animation: spin 25s linear infinite, sun-glow 3s 0s linear infinite;
+-o-animation:spin 25s linear infinite, sun-glow 3s 0s linear infinite;
+-ms-animation: spin 25s linear infinite, sun-glow 3s 0s ease-in-out infinite;
+animation: spin 25s linear infinite,sun-glow 3s 0s linear infinite;
+
+}
+/* the circle element in the svg itself */
+#sun{
+  stroke-width:18px;
+  stroke-dasharray:2px;
+  stroke-dashoffset:2px;
+}
+/* animation for the sun glowing effect */
+@-webkit-keyframes sun-glow { 
+	0% { fill: #f1c40f; stroke:#f1c40f;}
+	50% { fill: #f1c40f; stroke:#f1c40f;}
+	100% { fill: #f1c40f; stroke:#f1c40f;}
+}
+@-moz-keyframes sun-glow { 
+	0% { fill: #f1c40f; stroke:#f1c40f;}
+	50% { fill: #f1c40f; stroke:#f1c40f;}
+	100% { fill: #f1c40f; stroke:#f1c40f;}
+}
+@-o-keyframes sun-glow { 
+	0% { fill: #f1c40f; stroke:#f1c40f;}
+	50% { fill:#f1c40f; stroke:#f1c40f;}
+	100% { fill: #f1c40f; stroke:#f1c40f;}
+}
+@-ms-keyframes sun-glow { 
+	0% { fill: #f1c40f; stroke:#f1c40f;}
+	50% { fill: #f1c40f; stroke:#f1c40f;}
+	100% { fill: #f1c40f; stroke:#f1c40f;}
+}
+@keyframes sun-glow { 
+	0% { fill: #f1c40f; stroke:#f1c40f;}
+	50% { fill: #f1c40f; stroke:#f1c40f;}
+	100% { fill: #f1c40f; stroke:#f1c40f;}
+}
+
+/* start spin animation */
+@-webkit-keyframes spin{
+	100% {
+		-webkit-transform: rotate(360deg);
+	}
+}
+@-moz-keyframes spin{
+	100% {
+		-moz-transform: rotate(360deg);
+	}
+}
+@-o-keyframes spin{
+	100% {
+		-o-transform: rotate(360deg);
+	}
+}
+@-ms-keyframes spin{
+	100% {
+		-ms-transform: rotate(360deg);
+	}
+}
+@keyframes spin{
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
