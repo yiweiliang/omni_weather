@@ -10,7 +10,14 @@
 	</head>
 
 	<body>
-        <div class="omni"> <h1>Welcome to Omni Weather!&#9786 </h1></div>
+        <div class="omni"> <h1> &nbsp Welcome to Omni Weather!&#9786 </h1>
+       
+        <form action="weather_query.php" method="GET">
+            <input class="search-location-input" type="text" name="city" placeholder="Enter your city">
+            <input class="search-button" type="submit" value="Search">
+        </form>      
+    
+</div>
 		<div id="background-wrap">
     <div class="c1">
         <div class="cloud"></div>
@@ -33,12 +40,6 @@
     </div>
 </div>
 
-<div class="weather">
-		<form action="weather_query.php" method="GET">
-			<input class="search-location-input" type="text" name="city" placeholder="Enter your city">
-			<input class="search-button" type="submit" value="Search">
-		</form>      
-    </div>
     
 
 	</body>
