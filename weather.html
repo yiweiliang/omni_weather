@@ -1,24 +1,30 @@
-
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>Weather Search</title>
-        <meta charset="utf-8">
-        <title>Omni Weather App</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" type="text/css" href="index_weather.css" />
-	</head>
-
-	<body>
-        <div class="omni"> <h1> &nbsp Welcome to Omni Weather!&#9786 </h1>
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Omni-Weather</title>
+    <link rel="stylesheet" href="stylesheets/app.css" />
+    <link rel="stylesheet" href="stylesheets/index_weather.css" />
+    <script src="bower_components/modernizr/modernizr.js"></script>
+    </head>
+    <body>
+     	<div class="small-6 large-8 column" id="omni"> <h1>Welcome to <br/>Omni Weather!&#9786 </h1>
        
         <form action="weather_query.php" method="GET">
-            <input class="search-location-input" type="text" name="city" placeholder="Enter your city">
+        <div class="large-8 small-6 column">
+        <label>
+        <input class="search-location-input" type="text" placeholder="Enter your city" />
+        </label>
+      </div>
+          <div class="large-4 small-6 column" id="search-button">
+          <label>
             <input class="search-button" type="submit" value="Search">
-        </form>      
-    
-</div>
-		<div id="background-wrap">
+            <label>
+            </div>
+        </form>
+        </div>   
+        <div id="background-wrap">
     <div class="c1">
         <div class="cloud"></div>
     </div>
@@ -42,6 +48,6 @@
 
     
 
-	</body>
-
-</html>
+   </div>
+   </body>
+   </html>

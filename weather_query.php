@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -17,7 +16,6 @@
 		$open_url = 'http://api.openweathermap.org/data/2.5/weather?';	
 		$open_id = '2b38602d8c6ac06babab303acc148081';
 		
-
 		$open_urll = $open_url .'q='. $_GET['city']. '&APPID=' . $open_id . '&units=metric';
 		$open_results = file_get_contents($open_urll);
 		$object = json_decode($open_results);
@@ -33,4 +31,3 @@
 
 </body>
 </html>
-
