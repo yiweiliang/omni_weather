@@ -2,7 +2,7 @@
 	body{
   background-color: #3399FF;
 }
-.container-sun{
+#container-sun{
   text-align:center;
 }
 /* the svg element */
