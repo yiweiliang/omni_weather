@@ -12,7 +12,7 @@
 </svg>
 </div>
 
-<div class="small-6 large-4 column">
+<div class="small-6 large-8 column">
 <?php
 	if (isset($_GET['city']) ) {
 		$open_url = 'http://api.openweathermap.org/data/2.5/weather?';	
