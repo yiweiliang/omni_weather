@@ -12,7 +12,7 @@
 </svg>
 </div>
 
-<div class="small-6 large-8 column">
+<div class="small-6 large-4 column">
 <?php
 	if (isset($_GET['city']) ) {
 		$open_url = 'http://api.openweathermap.org/data/2.5/weather?';	
@@ -23,7 +23,7 @@
 		$object = json_decode($open_results);
 		$temp =$object->main->temp;
         $condition=$object->weather[0]->description;
-		  $html  = "'<div class='weather'><h3>The Weather for &nbsp</h3> " . "<h2>".$object->name . "</h2>" . " now is " . $temp . "&deg and the weather condition is: " . $condition; 
+		  $html  = "'<div class='weather'><h3>The Weather for &nbsp</h3> " . "<h3>".$object->name . "</h3>" . " now is " . $temp . "&deg and the weather condition is: " . $condition; 
 		echo $html . "</div>"; 	
 	}
 	else{
