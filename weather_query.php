@@ -2,15 +2,17 @@
 <html>
 <head>
 	<title> Response Page</title>
-	<link rel="stylesheet" type="text/css" href="weather.css"
+	<link rel="stylesheet" href="stylesheets/app.css" />
+	<link rel="stylesheet" type="text/css" href="weather.css">
 </head>
 <body>
-<div class="container-sun">
+<div class="small-6 large-8 column" id="container-sun">
 <svg class="svg-sun" version="1.1" viewBox="0 0 100 100" preserveAspectRatio="xMinYMin meet">
 <circle cx="50" cy="50" r="35" id="sun"></circle>
 </svg>
 </div>
 
+<div class="small-6 large-8 column">
 <?php
 	if (isset($_GET['city']) ) {
 		$open_url = 'http://api.openweathermap.org/data/2.5/weather?';	
@@ -28,6 +30,7 @@
 		echo "error";	
 	}
 	?>
+</div>
 
 </body>
 </html>
