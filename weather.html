@@ -6,7 +6,6 @@
     <title>Omni-Weather</title>
     <link rel="stylesheet" href="stylesheets/app.css" />
     <link rel="stylesheet" href="stylesheets/index_weather.css" />
-    <script src="bower_components/modernizr/modernizr.js"></script>
     </head>
     <body>
      	<div class="small-8 large-10 column" id="omni"> 
@@ -15,7 +14,7 @@
         <form action="weather_query.php" method="GET">
         <div class="large-6 small-4 column">
         <label>
-        <input class="search-location-input" type="text" placeholder="Enter your city" />
+        <input class="search-location-input" name="city" type="text" placeholder="Enter your city" />
         </label>
       </div>
           <div class="large-6 small-8 column" id="search-button">

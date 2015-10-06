@@ -1,4 +1,4 @@
-.weather{height:200px; width:200px; margin:30px auto;  font-family: "Myriad Pro", open sans, sans-serif; color:white;font-size:25px;}
+.weather{height:400px; width:400px; margin:100px auto;  font-family: "Myriad Pro", open sans, sans-serif; color:white;font-size:25px;}
 	body{
   background-color: #3399FF;
 }
@@ -7,7 +7,7 @@
 }
 /* the svg element */
 .svg-sun{
-  width:200px;
+  width:400px;
   height:200px;
 
   -webkit-transform-origin: center center;
